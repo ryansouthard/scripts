@@ -1,0 +1,36 @@
+<h1>Listing srvrs</h1>
+
+<table>
+  <tr>
+    <th>Server name</th>
+    <th>Ip address</th>
+    <th>Hardware</th>
+    <th>Hardware type</th>
+    <th>Cpu type</th>
+    <th>Cpu speed</th>
+    <th>Ram</th>
+    <th>Rack location</th>
+    <th>Server function</th>
+  </tr>
+
+<% for srvr in @srvrs %>
+  <tr>
+    <td><%=h srvr.server_name %></td>
+    <td><%=h srvr.ip_address %></td>
+    <td><%=h srvr.hardware %></td>
+    <td><%=h srvr.hardware_type %></td>
+    <td><%=h srvr.cpu_type %></td>
+    <td><%=h srvr.cpu_speed %></td>
+    <td><%=h srvr.ram %></td>
+    <td><%=h srvr.rack_location %></td>
+    <td><%=h srvr.server_function %></td>
+    <td><%= link_to 'Show', srvr %></td>
+    <td><%= link_to 'Edit', edit_srvr_path(srvr) %></td>
+    <td><%= link_to 'Destroy', srvr, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New srvr', new_srvr_path %>

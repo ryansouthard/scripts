@@ -1,0 +1,47 @@
+<h1>New server</h1>
+
+<% form_for(@server) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :server_name %><br />
+    <%= f.text_field :server_name %>
+  </p>
+  <p>
+    <%= f.label :ip_address %><br />
+    <%= f.text_field :ip_address %>
+  </p>
+  <p>
+    <%= f.label :hardware %><br />
+    <%= f.text_field :hardware %>
+  </p>
+  <p>
+    <%= f.label :hardware_type %><br />
+    <%= f.text_field :hardware_type %>
+  </p>
+  <p>
+    <%= f.label :cpu_type %><br />
+    <%= f.text_field :cpu_type %>
+  </p>
+  <p>
+    <%= f.label :cpu_speed %><br />
+    <%= f.text_field :cpu_speed %>
+  </p>
+  <p>
+    <%= f.label :ram %><br />
+    <%= f.text_field :ram %>
+  </p>
+  <p>
+    <%= f.label :rack_location %><br />
+    <%= f.text_field :rack_location %>
+  </p>
+  <p>
+    <%= f.label :server_function %><br />
+    <%= f.text_field :server_function %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', servers_path %>

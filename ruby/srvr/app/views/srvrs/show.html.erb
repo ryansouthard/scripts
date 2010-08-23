@@ -1,0 +1,48 @@
+<p>
+  <b>Server name:</b>
+  <%=h @srvr.server_name %>
+</p>
+
+<p>
+  <b>Ip address:</b>
+  <%=h @srvr.ip_address %>
+</p>
+
+<p>
+  <b>Hardware:</b>
+  <%=h @srvr.hardware %>
+</p>
+
+<p>
+  <b>Hardware type:</b>
+  <%=h @srvr.hardware_type %>
+</p>
+
+<p>
+  <b>Cpu type:</b>
+  <%=h @srvr.cpu_type %>
+</p>
+
+<p>
+  <b>Cpu speed:</b>
+  <%=h @srvr.cpu_speed %>
+</p>
+
+<p>
+  <b>Ram:</b>
+  <%=h @srvr.ram %>
+</p>
+
+<p>
+  <b>Rack location:</b>
+  <%=h @srvr.rack_location %>
+</p>
+
+<p>
+  <b>Server function:</b>
+  <%=h @srvr.server_function %>
+</p>
+
+
+<%= link_to 'Edit', edit_srvr_path(@srvr) %> |
+<%= link_to 'Back', srvrs_path %>

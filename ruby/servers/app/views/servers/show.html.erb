@@ -1,0 +1,48 @@
+<p>
+  <b>Server name:</b>
+  <%=h @server.server_name %>
+</p>
+
+<p>
+  <b>Ip address:</b>
+  <%=h @server.ip_address %>
+</p>
+
+<p>
+  <b>Hardware:</b>
+  <%=h @server.hardware %>
+</p>
+
+<p>
+  <b>Hardware type:</b>
+  <%=h @server.hardware_type %>
+</p>
+
+<p>
+  <b>Cpu type:</b>
+  <%=h @server.cpu_type %>
+</p>
+
+<p>
+  <b>Cpu speed:</b>
+  <%=h @server.cpu_speed %>
+</p>
+
+<p>
+  <b>Ram:</b>
+  <%=h @server.ram %>
+</p>
+
+<p>
+  <b>Rack location:</b>
+  <%=h @server.rack_location %>
+</p>
+
+<p>
+  <b>Server function:</b>
+  <%=h @server.server_function %>
+</p>
+
+
+<%= link_to 'Edit', edit_server_path(@server) %> |
+<%= link_to 'Back', servers_path %>
